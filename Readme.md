@@ -16,10 +16,16 @@
 - запустите из корня проекта python manage.py migrate
 - создатей пользователя админа python manage.py createsuperuser 
 
+для запуска тестового сервера python manage.py runserver
+
 ##Описание приложения
 Простаранства имён:
 - /admin - вход в админку (в тестовой базе по умолчанию пароль admin логин admin)
 - /rest-auth/login -api авторизация
-- /api - само api по опросам 
+- /api - само api 
 
-#запуск приложения python manage.py runserver (из корня проекта)
+- /api/votings - получение всех опросов (детально /api/votings/<id>/)
+- /api/questions - получение всех вопрос (детально /api/questions/<id>/)
+- /api/answers - получение всех ответов (детально /api/answers/<id>/)
+- /api/statistic/ - статистика ( метод POST пример тела JSON {"user_id": integer})
+
