@@ -21,3 +21,5 @@
 - /admin - вход в админку (в тестовой базе по умолчанию пароль admin логин admin)
 - /rest-auth/login -api авторизация
 - /api - само api по опросам 
+
+#запуск приложения python manage.py runserver (из корня проекта)
